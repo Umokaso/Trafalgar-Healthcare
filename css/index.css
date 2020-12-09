@@ -10,37 +10,89 @@ body {
 }
 
 /* Utiliy Classes */
+.f-bold {
+    font-weight: 700;
+}
 
 .shadow {
-    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.4) ;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.4) ;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.4) ;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    10px 40px 50px 0px rgba(229, 233, 246, 0.4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         10px 40px 50px 0px rgba(229, 233, 246, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.custom-btn {
+    color: #458FF6;
+    border: 1px solid #458FF6;
+    border-radius: 20px;
+}
+.custom-btn:hover {
+    background-color: #458FF6;
+    color: white;
 }
 
 section {
     margin: 80px 0;
 }
 
-hr {
-    width: 20%;
+.h-line {
+    width: 55px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
 }
+
 
 /* Nav section */
-
-.navbar-brand img {
-    padding-left: 20px;
+.navbar .navbar-toggler {
+    outline: none !important;
+    border: none !important;
 }
-/* .navbar-brand a {
-    margin-left: 100px;
-} */
 
-.banner p,
-h1,
-a {
+.navbar-light .navbar-toggler-icon {
+   background-image: none !important;
+}
+
+.hamburger .line{
+    width: 38px;
+    height: 4px;
+    background-color: #30062E;
+    display: block;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(15px) rotate(45deg);
+    -ms-transform: translateY(15px) rotate(45deg);
+    -o-transform: translateY(15px) rotate(45deg);
+    transform: translateY(12.5px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-15px) rotate(-45deg);
+    -ms-transform: translateY(-15px) rotate(-45deg);
+    -o-transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-12.5px) rotate(-45deg);
+  }
+
+
+
+/* Body */
+  .banner p,h1,a {
     padding-top: 30px;
 }
 
-.btn {
+.banner-btn {
     background-color: #458FF6;
     color: white;
     border-radius: 20px;
